@@ -22,7 +22,7 @@ const UpdateForm = ({ setUpdateToggle, singleData, setSingleData }) => {
 
     axios
       .put(API_INVOICE + "update-invoice", data, config)
-      .then((res) => console.log(res))
+      .then((res) => window.location.reload())
       .catch((err) => console.log(err));
   };
 

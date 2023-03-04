@@ -66,7 +66,7 @@ const InvoiceForm = ({ setToggleAdd }) => {
 
     axios
       .post(API_INVOICE + "add-invoice", data, config)
-      .then((res) => console.log(res))
+      .then((res) => window.location.reload())
       .catch((err) => console.log(err));
   };
 
