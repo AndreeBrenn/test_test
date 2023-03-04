@@ -7,7 +7,10 @@ const Navbar = () => {
       <span className="text-white font-Roboto text-[25px]">INVOICE TEST</span>
       <span
         className="text-white text-[18px] cursor-pointer rounded-md p-1 hover:(bg-gray-600)"
-        onClick={() => Cookies.remove("user_token")}
+        onClick={() => {
+          Cookies.remove("user_token");
+          window.location.reload();
+        }}
       >
         Logout
       </span>
