@@ -14,6 +14,6 @@ app.use(express.urlencoded({ extended: false }));
 app.use("/api/users", require("./routes/userRoutes"));
 app.use("/api/invoice", require("./routes/invoiceRoutes"));
 
-//app.use(errorHandler);
+app.use(errorHandler);
 
 app.listen(3001, () => console.log("Running Server"));
